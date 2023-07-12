@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地政AI小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <img
+        src="/ub.png"
+        alt="" class="card-img">
+      <h1 class="card-title">地政AI問與答</h1>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '???' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="填寫地政問題" />
+      <button type="submit" class="card-btn">查詢</button>
+    </div>
+  </form>
+</body>
+
+</html>
